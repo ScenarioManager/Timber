@@ -1,0 +1,21 @@
+group = 'me.calebbasham.scenariomanager'
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    maven { url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url = "https://hub.spigotmc.org/nexus/content/groups/public/" }
+    maven { url = "https://s3.amazonaws.com/caleb-maven" }
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT"
+    compileOnly "me.calebbassham:ScenarioManager:0.8.4"
+}
+
+jar {
+    from configurations.compile.collect { zipTree it }
+    baseName = rootProject.name
+    archiveName = "${baseName}.${extension}"
+}
