@@ -16,7 +16,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.LinkedList;
 
-public class Scenario extends SimpleScenario implements Listener {
+public class Timber extends SimpleScenario implements Listener {
 
     private BlockFace[] blockFaces = new BlockFace[]{BlockFace.UP, BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST};
     private Material[] treeMaterials = new Material[]{Material.OAK_WOOD, Material.BIRCH_WOOD, Material.JUNGLE_WOOD, Material.ACACIA_WOOD, Material.DARK_OAK_WOOD, Material.SPRUCE_WOOD};

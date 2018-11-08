@@ -7,6 +7,6 @@ public class TimberPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        ScenarioManagerInstance.getScenarioManager().register(new Scenario(), this);
+        ScenarioManagerInstance.getScenarioManager().register(new Timber(), this);
     }
 }
