@@ -3,4 +3,4 @@ description: When part of a tree is broken, all of the wood above the broken blo
 author: Caleb Bassham
 version: 1.0.0
 api-version: 1.13
-main: me.calebbassham.scenariomanager.TimberPlugin
+main: me.calebbassham.scenariomanager.timber.TimberPlugin
